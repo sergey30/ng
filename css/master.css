@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+  src: local("Myriad Pro Regular"), local("MyriadProRegular"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  padding: 40px 40px 10px 40px;
+}
+
+/* header */
+
+header {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-yellow-square {
+  width: 22px;
+  height: 36px;
+  border: solid #fbd42c 5px;
+}
+
+.logo-name {
+  padding: 6px 10px;
+}
+
+.logo-name-row1, .logo-name-row2  {
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  font-size: 16.31px;
+}
