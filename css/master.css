@@ -119,20 +119,20 @@ header {
     font-size: 14px;
   }
 
-      header .authorization .singup {
-        width: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-right: solid 1px #e8e8e8;
-      }
+    header .authorization .singup {
+      width: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: solid 1px #e8e8e8;
+    }
 
-      header .authorization .login {
-        width: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+    header .authorization .login {
+      width: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
 
 
