@@ -1,5 +1,7 @@
 
 body {
+  max-width: 1050px;
+  margin: auto;
   padding: 40px 40px 10px 40px;
 }
 
@@ -8,13 +10,14 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* header logo start */
 
 .logo {
   display: flex;
-  margin-right: 140px;
+  margin-right: 150px;
   margin-bottom: 20px;
 }
 
@@ -40,7 +43,8 @@ header {
   border: solid 1px #e8e8e8;
   border-radius: 3px;
   padding: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .search-magnifier {
@@ -79,7 +83,7 @@ header {
 }
 
 input[type="search"] {
-  /*min-width: 445px;*/
+  max-width: 500px;
   margin: 5px 10px;
   border: none;
   font-family: "Myriad Pro Regular", "Arial", sans-serif;
@@ -117,7 +121,7 @@ input[type="submit"] {
   justify-content: space-around;
   border: solid 1px #e8e8e8;
   border-radius: 3px;
-  padding: 10px;
+  padding: 8px 10px 12px 10px;
   font-family: "Myriad Pro Regular", "Arial", sans-serif;
   color: #999999;
   font-size: 14px;
@@ -138,12 +142,5 @@ input[type="submit"] {
   align-items: center;
 }
 
-
-
-
 /* header authorization end */
-
-
-
-
 /********** header end **********/
