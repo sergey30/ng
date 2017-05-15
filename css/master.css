@@ -5,6 +5,10 @@ body {
   padding: 40px 40px 10px 40px;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -144,19 +148,111 @@ header {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
 }
 
+  .nav-common {
+    width: 118px;
+    height: 80px;
+  }
 
+    .nav-common-logo {
+      height: 25px;
+      display: flex;
+    }
 
+      .nav-common-logo-border {
+          width: 41.5px;
+          height: 5px;
+          margin-top: 10px;
+          background-color: #777777;
+      }
 
+      .nav-common-logo-image {
+        width: 25px;
+        height: 25px;
+        background-color: #ffffff;
+        background-repeat: no-repeat;
+        margin: 0 5px;
+      }
 
-.nav-home {
-  display: flex;
-  width: 118px;
-}
+      .nav-home-logo-image {
+        background-image: url("../image/nav/home-grey.jpg");
+      }
 
+      .nav-home-logo-image:hover {
+        background-image: url("../image/nav/home-yellow.jpg");
+      }
 
+      .nav-photography-logo-image {
+        background-image: url("../image/nav/photography-grey.jpg");
+      }
 
+      .nav-photography-logo-image:hover {
+        background-image: url("../image/nav/photography-yellow.jpg");
+      }
+
+      .nav-video-logo-image {
+        background-image: url("../image/nav/video-grey.jpg");
+      }
+
+      .nav-video-logo-image:hover {
+        background-image: url("../image/nav/video-yellow.jpg");
+      }
+
+      .nav-environment-logo-image {
+        background-image: url("../image/nav/environment-grey.jpg");
+      }
+
+      .nav-environment-logo-image:hover {
+        background-image: url("../image/nav/environment-yellow.jpg");
+      }
+
+      .nav-travel-logo-image {
+        background-image: url("../image/nav/travel-grey.jpg");
+      }
+
+      .nav-travel-logo-image:hover {
+        background-image: url("../image/nav/travel-yellow.jpg");
+      }
+
+      .nav-adventure-logo-image {
+        background-image: url("../image/nav/adventure-grey.jpg");
+      }
+
+      .nav-adventure-logo-image:hover {
+        background-image: url("../image/nav/adventure-yellow.jpg");
+      }
+
+      .nav-television-logo-image {
+        background-image: url("../image/nav/television-grey.jpg");
+      }
+
+      .nav-television-logo-image:hover {
+        background-image: url("../image/nav/television-yellow.jpg");
+      }
+
+      .nav-kids-logo-image {
+        background-image: url("../image/nav/kids-grey.jpg");
+      }
+
+      .nav-kids-logo-image:hover {
+        background-image: url("../image/nav/kids-yellow.jpg");
+      }
+
+    .nav-common-name {
+      margin-top: 20px;
+      text-align: center;
+      font-family: "Myriad Pro Semi Bold";
+      color: #555555;
+      font-size: 17px;
+    }
+
+    .nav-common-name:hover {
+      color: #fbd42c;
+    }
 
 
 

@@ -9,3 +9,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+  font-family: "Myriad Pro Semi Bold";
+  src: url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.eot");
+  src: local("Myriad Pro Semi Bold"), local("MyriadProSemiBold"),
+    url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype"),
+    url("../fonts/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
