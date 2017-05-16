@@ -153,27 +153,26 @@ nav {
   justify-content: center;
 }
 
-  .nav-common {
+  .nav-item {
     width: 118px;
     height: 80px;
   }
 
-    .nav-common-logo {
+    .nav-item-logo {
       height: 25px;
       display: flex;
     }
 
-      .nav-common-logo-border {
+      .nav-item-logo-border {
           width: 41.5px;
           height: 5px;
           margin-top: 10px;
           background-color: #777777;
       }
 
-      .nav-common-logo-image {
+      .nav-item-logo-image {
         width: 25px;
         height: 25px;
-        background-color: #ffffff;
         background-repeat: no-repeat;
         margin: 0 5px;
       }
@@ -242,7 +241,7 @@ nav {
         background-image: url("../image/nav/kids-yellow.jpg");
       }
 
-    .nav-common-name {
+    .nav-item-name {
       margin-top: 20px;
       text-align: center;
       font-family: "Myriad Pro Semi Bold";
@@ -250,14 +249,96 @@ nav {
       font-size: 17px;
     }
 
-    .nav-common-name:hover {
+    .nav-item-name:hover {
       color: #fbd42c;
     }
 
+.content {}
 
+  .content main {}
 
+    .content main .wrap{}
 
+      .content main .wrap-subnav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 170px;
+        border-right: solid 1px #e8e8e8;
+      }
 
+        .content main .wrap-subnav-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 75px;
+          height: 70px;
+          margin: 0 5px 5px 0;
+          border: solid 1px #e8e8e8;
+        }
+
+        .content main .wrap-subnav-explorers,
+        .content main .wrap-subnav-trips {
+          margin-bottom: 0;
+        }
+
+        .content main .wrap-subnav-dailynews {
+          background-color: #555555;
+        }
+
+          .content main .wrap-subnav-item-logo {
+            width: 26px;
+            height: 26px;
+            background-repeat: no-repeat;
+          }
+
+          .content main .wrap-subnav-dailynews-logo {
+            background-image: url(../image/subnav/dailynews-white.png);
+          }
+
+          .content main .wrap-subnav-magazine-logo {
+            background-image: url(../image/subnav/magazine-grey.jpg);
+          }
+
+          .content main .wrap-subnav-maps-logo {
+            background-image: url(../image/subnav/maps-grey.jpg);
+          }
+
+          .content main .wrap-subnav-science-logo {
+            background-image: url(../image/subnav/science-grey.jpg);
+          }
+
+          .content main .wrap-subnav-education-logo {
+            background-image: url(../image/subnav/education-grey.jpg);
+          }
+
+          .content main .wrap-subnav-games-logo {
+            background-image: url(../image/subnav/games-grey.jpg);
+          }
+
+          .content main .wrap-subnav-events-logo {
+            background-image: url(../image/subnav/events-grey.jpg);
+          }
+
+          .content main .wrap-subnav-blogs-logo {
+            background-image: url(../image/subnav/blogs-grey.jpg);
+          }
+
+          .content main .wrap-subnav-explorers-logo {
+            background-image: url(../image/subnav/explorers-grey.jpg);
+          }
+
+          .content main .wrap-subnav-trips-logo {
+            background-image: url(../image/subnav/trips-grey.jpg);
+          }
+
+          .content main .wrap-subnav-item-name {
+            font-family: "Myriad Pro Regular", "Arial", sans-serif;
+            font-size: 12px;
+            color: #777777;
+          }
+
+  .content aside {}
 
 
 
