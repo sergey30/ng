@@ -283,7 +283,7 @@ nav {
           margin-bottom: 0;
         }
 
-        .content > main > .wrap > .subnav > a > .dailynews {
+        .content > main > .wrap > .subnav > a > .background-grey {
           background-color: #555555;
         }
 
@@ -294,6 +294,10 @@ nav {
           }
 
           .content > main > .wrap > .subnav > a > .dailynews > .logo {
+            background-image: url(../image/subnav/dailynews-grey.jpg);
+          }
+
+          .content > main > .wrap > .subnav > a > .dailynews > .logo-white {
             background-image: url(../image/subnav/dailynews-white.png);
           }
 
@@ -301,36 +305,72 @@ nav {
             background-image: url(../image/subnav/magazine-grey.jpg);
           }
 
+          .content > main > .wrap > .subnav > a > .magazine > .logo-white {
+            background-image: url(../image/subnav/magazine-white.png);
+          }
+
           .content > main > .wrap > .subnav > a > .maps > .logo {
             background-image: url(../image/subnav/maps-grey.jpg);
+          }
+
+          .content > main > .wrap > .subnav > a > .maps > .logo-white {
+            background-image: url(../image/subnav/maps-white.png);
           }
 
           .content > main > .wrap > .subnav > a > .science > .logo {
             background-image: url(../image/subnav/science-grey.jpg);
           }
 
+          .content > main > .wrap > .subnav > a > .science > .logo-white {
+            background-image: url(../image/subnav/science-white.png);
+          }
+
           .content > main > .wrap > .subnav > a > .education > .logo {
             background-image: url(../image/subnav/education-grey.jpg);
+          }
+
+          .content > main > .wrap > .subnav > a > .education > .logo-white {
+            background-image: url(../image/subnav/education-white.png);
           }
 
           .content > main > .wrap > .subnav > a > .games > .logo {
             background-image: url(../image/subnav/games-grey.jpg);
           }
 
+          .content > main > .wrap > .subnav > a > .games > .logo-white {
+            background-image: url(../image/subnav/games-white.png);
+          }
+
           .content > main > .wrap > .subnav > a > .events > .logo {
             background-image: url(../image/subnav/events-grey.jpg);
+          }
+
+          .content > main > .wrap > .subnav > a > .events > .logo-white {
+            background-image: url(../image/subnav/events-white.png);
           }
 
           .content > main > .wrap > .subnav > a > .blogs > .logo {
             background-image: url(../image/subnav/blogs-grey.jpg);
           }
 
+          .content > main > .wrap > .subnav > a > .blogs > .logo-white {
+            background-image: url(../image/subnav/blogs-white.png);
+          }
+
           .content > main > .wrap > .subnav > a > .explorers > .logo {
             background-image: url(../image/subnav/explorers-grey.jpg);
           }
 
+          .content > main > .wrap > .subnav > a > .explorers > .logo-white {
+            background-image: url(../image/subnav/explorers-white.png);
+          }
+
           .content > main > .wrap > .subnav > a > .trips > .logo {
             background-image: url(../image/subnav/trips-grey.jpg);
+          }
+
+          .content > main > .wrap > .subnav > a > .trips > .logo-white {
+            background-image: url(../image/subnav/trips-white.png);
           }
 
           .content > main > .wrap > .subnav a > .item > .name {
@@ -339,7 +379,10 @@ nav {
             color: #777777;
           }
 
-  .content aside {}
+          .content > main > .wrap > .subnav a > .item > .name-white {
+            color: #ffffff;
+          }
+
 
 
 
