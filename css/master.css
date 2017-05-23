@@ -9,93 +9,80 @@ a {
   text-decoration: none;
 }
 
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-  header > .logo {
+  header {
     display: flex;
-    margin-right: 150px;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-    header > .logo > .yellow-square {
-      width: 22px;
-      height: 36px;
-      border: solid #fbd42c 5px;
+    header > .logo {
+      display: flex;
+      margin-right: 150px;
+      margin-bottom: 20px;
     }
 
-    header > .logo > .name {
-      padding: 6px 10px 3px 10px;
-      font-family: "Myriad Pro Regular", "Arial", sans-serif;
-      font-size: 22px;
-      line-height: 0.9;
+      header > .logo > .yellow-square {
+        width: 22px;
+        height: 36px;
+        border: solid #fbd42c 5px;
+      }
+
+      header > .logo > .name {
+        padding: 6px 10px 3px 10px;
+        font-family: "Myriad Pro Regular", "Arial", sans-serif;
+        font-size: 22px;
+        line-height: 0.9;
+      }
+
+    header > .search {
+      display: flex;
+      height: 26px;
+      border: solid 1px #e8e8e8;
+      border-radius: 3px;
+      padding: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
     }
 
-  header > .search {
-    display: flex;
-    height: 26px;
-    border: solid 1px #e8e8e8;
-    border-radius: 3px;
-    padding: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-  }
-
-    header > .search > .magnifier {
-      position: relative;
-      width: 22px;
-      height: 22px;
-    }
-
-      header > .search > .magnifier > .figure1 {
-        position: absolute; top: 2px; left: 0;
-        width: 13px;
-        height: 13px;
-        border: solid 2px #e8e8e8;
-        border-radius: 50%;
+      header > .search > .magnifier {
+        position: relative;
+        width: 22px;
+        height: 22px;
       }
 
-      header > .search > .magnifier > .figure2 {
-        position: absolute; top: 3.5px; left: 2.7px;
-        width: 10px;
-        height: 10px;
-        border-left: solid 2px #e8e8e8;
-        border-bottom: solid 2px #e8e8e8;
-        border-radius: 50%;
-        opacity: 0.65;
-      }
-
-      header > .search > .magnifier > .figure3 {
-        position: absolute; top: 17.5px; left: 11px;
-        width: 8px;
-        border: solid 2px #e8e8e8;
-        transform: rotate(45deg);
-      }
-
-    header > .search > .field {}
-
-      header > .search > .field > .form {
-        display: flex;
-      }
-
-        header > .search > .field > .form > input[type="search"] {
-          max-width: 500px;
-          margin: 5px 10px;
-          border: none;
-          font-family: "Myriad Pro Regular", "Arial", sans-serif;
-          color: #999999;
-          font-size: 15px;
+        header > .search > .magnifier > .figure1 {
+          position: absolute; top: 2px; left: 0;
+          width: 13px;
+          height: 13px;
+          border: solid 2px #e8e8e8;
+          border-radius: 50%;
         }
 
-        header > .search > .field > .form > .border {
-          border-left: solid 1px #e8e8e8;
-          border-right: solid 1px #e8e8e8;
+        header > .search > .magnifier > .figure2 {
+          position: absolute; top: 3.5px; left: 2.7px;
+          width: 10px;
+          height: 10px;
+          border-left: solid 2px #e8e8e8;
+          border-bottom: solid 2px #e8e8e8;
+          border-radius: 50%;
+          opacity: 0.65;
         }
 
-          header > .search > .field > .form > .border > .categories {
+        header > .search > .magnifier > .figure3 {
+          position: absolute; top: 17.5px; left: 11px;
+          width: 8px;
+          border: solid 2px #e8e8e8;
+          transform: rotate(45deg);
+        }
+
+      header > .search > .field {}
+
+        header > .search > .field > .form {
+          display: flex;
+        }
+
+          header > .search > .field > .form > input[type="search"] {
+            max-width: 500px;
             margin: 5px 10px;
             border: none;
             font-family: "Myriad Pro Regular", "Arial", sans-serif;
@@ -103,285 +90,353 @@ header {
             font-size: 15px;
           }
 
-        header > .search > .field > .form > input[type="submit"] {
-          width: 22px;
-          height: 22px;
-          border: none;
-          margin: 3px 0 2px 10px;
-          background-image: url("../image/header/submit.jpg"); /*svg в chrome не отображался*/
-        }
+          header > .search > .field > .form > .border {
+            border-left: solid 1px #e8e8e8;
+            border-right: solid 1px #e8e8e8;
+          }
 
-  header > .authorization {
-    display: flex;
-    height: 46px;
-    border: solid 1px #e8e8e8;
-    border-radius: 3px;
-    font-family: "Myriad Pro Regular", "Arial", sans-serif;
-    color: #999999;
-    font-size: 14px;
-  }
+            header > .search > .field > .form > .border > .categories {
+              margin: 5px 10px;
+              border: none;
+              font-family: "Myriad Pro Regular", "Arial", sans-serif;
+              color: #999999;
+              font-size: 15px;
+            }
 
-    header > .authorization > .singup,
-    header > .authorization > .login {
+          header > .search > .field > .form > input[type="submit"] {
+            width: 22px;
+            height: 22px;
+            border: none;
+            margin: 3px 0 2px 10px;
+            background-image: url("../image/header/submit.jpg");
+          }
+
+    header > .authorization {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 10px;
-      width: 80px;
+      height: 46px;
+      border: solid 1px #e8e8e8;
+      border-radius: 3px;
+      font-family: "Myriad Pro Regular", "Arial", sans-serif;
+      color: #999999;
+      font-size: 14px;
     }
 
-    header > .authorization > .border {
-      margin: 10px 0;
-      border-right: solid 1px #e8e8e8;
-    }
-
-      header > .authorization > .singup > .logo {
-        background-image: url("../image/header/singup.jpg");
-        width: 16px;
-        height: 16px;
-    }
-
-      header > .authorization > .login > .logo {
-        background-image: url("../image/header/login.jpg");
-        width: 16px;
-        height: 16px;
-    }
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-  nav > a > .item {
-    width: 118px;
-    height: 80px;
-  }
-
-    nav > a > .item > .logo {
-      height: 25px;
-      display: flex;
-    }
-
-      nav > a > .item > .logo > .border {
-          width: 41.5px;
-          height: 5px;
-          margin-top: 10px;
-          background-color: #777777;
-      }
-
-      nav > a > .item > .logo > .image {
-        width: 25px;
-        height: 25px;
-        background-repeat: no-repeat;
-        margin: 0 5px;
-      }
-
-      nav > a > .home > .logo > .image {
-        background-image: url("../image/nav/home-grey.jpg");
-      }
-
-      nav > a > .home > .logo > .image:hover {
-        background-image: url("../image/nav/home-yellow.jpg");
-      }
-
-      nav > a > .photography > .logo > .image {
-        background-image: url("../image/nav/photography-grey.jpg");
-      }
-
-      nav > a > .photography > .logo > .image:hover {
-        background-image: url("../image/nav/photography-yellow.jpg");
-      }
-
-      nav > a > .video > .logo > .image {
-        background-image: url("../image/nav/video-grey.jpg");
-      }
-
-      nav > a > .video > .logo > .image:hover {
-        background-image: url("../image/nav/video-yellow.jpg");
-      }
-
-      nav > a > .environment > .logo > .image {
-        background-image: url("../image/nav/environment-grey.jpg");
-      }
-
-      nav > a > .environment > .logo > .image:hover {
-        background-image: url("../image/nav/environment-yellow.jpg");
-      }
-
-      nav > a > .travel > .logo > .image {
-        background-image: url("../image/nav/travel-grey.jpg");
-      }
-
-      nav > a > .travel > .logo > .image:hover {
-        background-image: url("../image/nav/travel-yellow.jpg");
-      }
-
-      nav > a > .adventure > .logo > .image {
-        background-image: url("../image/nav/adventure-grey.jpg");
-      }
-
-      nav > a > .adventure > .logo > .image:hover {
-        background-image: url("../image/nav/adventure-yellow.jpg");
-      }
-
-      nav > a > .television > .logo > .image {
-        background-image: url("../image/nav/television-grey.jpg");
-      }
-
-      nav > a > .television > .logo > .image:hover {
-        background-image: url("../image/nav/television-yellow.jpg");
-      }
-
-      nav > a > .kids > .logo > .image {
-        background-image: url("../image/nav/kids-grey.jpg");
-      }
-
-      nav > a > .kids > .logo > .image:hover {
-        background-image: url("../image/nav/kids-yellow.jpg");
-      }
-
-    nav > a > .item > .name {
-      margin-top: 20px;
-      text-align: center;
-      font-family: "Myriad Pro Semi Bold";
-      color: #555555;
-      font-size: 17px;
-    }
-
-    nav > a > .item > .name:hover {
-      color: #fbd42c;
-    }
-
-.content {}
-
-  .content > main {}
-
-    .content > main > .wrap{}
-
-      .content > main > .wrap > .subnav {
+      header > .authorization > .singup,
+      header > .authorization > .login {
         display: flex;
-        flex-wrap: wrap;
-        width: 170px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        width: 80px;
+      }
+
+      header > .authorization > .border {
+        margin: 10px 0;
         border-right: solid 1px #e8e8e8;
       }
 
-        .content > main > .wrap > .subnav > a > .item {
+        header > .authorization > .singup > .logo {
+          background-image: url("../image/header/singup.jpg");
+          width: 16px;
+          height: 16px;
+      }
+
+        header > .authorization > .login > .logo {
+          background-image: url("../image/header/login.jpg");
+          width: 16px;
+          height: 16px;
+      }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+    nav > a > .item {
+      width: 118px;
+      height: 80px;
+    }
+
+      nav > a > .item > .logo {
+        height: 25px;
+        display: flex;
+      }
+
+        nav > a > .item > .logo > .border {
+            width: 41.5px;
+            height: 5px;
+            margin-top: 10px;
+            background-color: #777777;
+        }
+
+        nav > a > .item > .logo > .image {
+          width: 25px;
+          height: 25px;
+          background-repeat: no-repeat;
+          margin: 0 5px;
+        }
+
+        nav > a > .home > .logo > .image {
+          background-image: url("../image/nav/home-grey.jpg");
+        }
+
+        nav > a > .home > .logo > .image:hover {
+          background-image: url("../image/nav/home-yellow.jpg");
+        }
+
+        nav > a > .photography > .logo > .image {
+          background-image: url("../image/nav/photography-grey.jpg");
+        }
+
+        nav > a > .photography > .logo > .image:hover {
+          background-image: url("../image/nav/photography-yellow.jpg");
+        }
+
+        nav > a > .video > .logo > .image {
+          background-image: url("../image/nav/video-grey.jpg");
+        }
+
+        nav > a > .video > .logo > .image:hover {
+          background-image: url("../image/nav/video-yellow.jpg");
+        }
+
+        nav > a > .environment > .logo > .image {
+          background-image: url("../image/nav/environment-grey.jpg");
+        }
+
+        nav > a > .environment > .logo > .image:hover {
+          background-image: url("../image/nav/environment-yellow.jpg");
+        }
+
+        nav > a > .travel > .logo > .image {
+          background-image: url("../image/nav/travel-grey.jpg");
+        }
+
+        nav > a > .travel > .logo > .image:hover {
+          background-image: url("../image/nav/travel-yellow.jpg");
+        }
+
+        nav > a > .adventure > .logo > .image {
+          background-image: url("../image/nav/adventure-grey.jpg");
+        }
+
+        nav > a > .adventure > .logo > .image:hover {
+          background-image: url("../image/nav/adventure-yellow.jpg");
+        }
+
+        nav > a > .television > .logo > .image {
+          background-image: url("../image/nav/television-grey.jpg");
+        }
+
+        nav > a > .television > .logo > .image:hover {
+          background-image: url("../image/nav/television-yellow.jpg");
+        }
+
+        nav > a > .kids > .logo > .image {
+          background-image: url("../image/nav/kids-grey.jpg");
+        }
+
+        nav > a > .kids > .logo > .image:hover {
+          background-image: url("../image/nav/kids-yellow.jpg");
+        }
+
+      nav > a > .item > .name {
+        margin-top: 20px;
+        text-align: center;
+        font-family: "Myriad Pro Semi Bold", "Arial", sans-serif;
+        color: #555555;
+        font-size: 17px;
+      }
+
+      nav > a > .item > .name:hover {
+        color: #fbd42c;
+      }
+
+  .content {}
+
+    .content > main {}
+
+      .content > main > .wrap{
+        display: flex;
+      }
+
+        .content > main > .wrap > .subnav {
           display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: center;
-          width: 75px;
-          height: 70px;
-          margin: 0 5px 5px 0;
-          border: solid 1px #e8e8e8;
+          flex-wrap: wrap;
+          width: 170px;
+          border-right: solid 1px #e8e8e8;
+          margin-right: 10px;
         }
 
-        .content > main > .wrap > .subnav > a > .explorers,
-        .content > main > .wrap > .subnav > a > .trips {
-          margin-bottom: 0;
-        }
-
-        .content > main > .wrap > .subnav > a > .background-grey {
-          background-color: #555555;
-        }
-
-          .content > main > .wrap > .subnav > a > .item > .logo {
-            width: 26px;
-            height: 26px;
-            background-repeat: no-repeat;
+          .content > main > .wrap > .subnav > a > .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 75px;
+            height: 70px;
+            margin: 0 5px 5px 0;
+            border: solid 1px #e8e8e8;
           }
 
-          .content > main > .wrap > .subnav > a > .dailynews > .logo {
-            background-image: url(../image/subnav/dailynews-grey.jpg);
+          .content > main > .wrap > .subnav > a > .explorers,
+          .content > main > .wrap > .subnav > a > .trips {
+            margin-bottom: 0;
           }
 
-          .content > main > .wrap > .subnav > a > .dailynews > .logo-white {
-            background-image: url(../image/subnav/dailynews-white.png);
+          .content > main > .wrap > .subnav > a > .background-grey {
+            background-color: #777777;
           }
 
-          .content > main > .wrap > .subnav > a > .magazine > .logo {
-            background-image: url(../image/subnav/magazine-grey.jpg);
+            .content > main > .wrap > .subnav > a > .item > .logo {
+              width: 26px;
+              height: 26px;
+              background-repeat: no-repeat;
+            }
+
+            .content > main > .wrap > .subnav > a > .dailynews > .logo {
+              background-image: url(../image/subnav/dailynews-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .dailynews > .logo-white {
+              background-image: url(../image/subnav/dailynews-white.png);
+            }
+
+            .content > main > .wrap > .subnav > a > .magazine > .logo {
+              background-image: url(../image/subnav/magazine-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .magazine > .logo-white {
+              background-image: url(../image/subnav/magazine-white.png);
+            }
+
+            .content > main > .wrap > .subnav > a > .maps > .logo {
+              background-image: url(../image/subnav/maps-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .maps > .logo-white {
+              background-image: url(../image/subnav/maps-white.png);
+            }
+
+            .content > main > .wrap > .subnav > a > .science > .logo {
+              background-image: url(../image/subnav/science-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .science > .logo-white {
+              background-image: url(../image/subnav/science-white.png);
+            }
+
+            .content > main > .wrap > .subnav > a > .education > .logo {
+              background-image: url(../image/subnav/education-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .education > .logo-white {
+              background-image: url(../image/subnav/education-white.png);
+            }
+
+            .content > main > .wrap > .subnav > a > .games > .logo {
+              background-image: url(../image/subnav/games-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .games > .logo-white {
+              background-image: url(../image/subnav/games-white.png);
+            }
+
+            .content > main > .wrap > .subnav > a > .events > .logo {
+              background-image: url(../image/subnav/events-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .events > .logo-white {
+              background-image: url(../image/subnav/events-white.png);
+            }
+
+            .content > main > .wrap > .subnav > a > .blogs > .logo {
+              background-image: url(../image/subnav/blogs-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .blogs > .logo-white {
+              background-image: url(../image/subnav/blogs-white.png);
+            }
+
+            .content > main > .wrap > .subnav > a > .explorers > .logo {
+              background-image: url(../image/subnav/explorers-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .explorers > .logo-white {
+              background-image: url(../image/subnav/explorers-white.png);
+            }
+
+            .content > main > .wrap > .subnav > a > .trips > .logo {
+              background-image: url(../image/subnav/trips-grey.jpg);
+            }
+
+            .content > main > .wrap > .subnav > a > .trips > .logo-white {
+              background-image: url(../image/subnav/trips-white.png);
+            }
+
+            .content > main > .wrap > .subnav a > .item > .name {
+              font-family: "Myriad Pro Regular", "Arial", sans-serif;
+              font-size: 12px;
+              color: #777777;
+            }
+
+            .content > main > .wrap > .subnav a > .item > .name-white {
+              color: #ffffff;
+            }
+
+        .content > main > .wrap > .slider {}
+
+          .content > main > .wrap > .slider > .nav {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
           }
 
-          .content > main > .wrap > .subnav > a > .magazine > .logo-white {
-            background-image: url(../image/subnav/magazine-white.png);
+            .content > main > .wrap > .slider > .nav > .item {
+              width: 76px;
+            }
+
+              .content > main > .wrap > .slider > .nav > .item > .name {
+                height: 20px;
+                padding-top: 8px;
+                border: solid 1px #e8e8e8;
+                text-align: center;
+                font-family: "Arial", sans-serif;
+                font-size: 12px;
+                color: #777777;
+              }
+
+              .content > main > .wrap > .slider > .nav > .item > .name-grey {
+                background-color: #777777;
+                color: #ffffff;
+                border: solid 1px #777777;
+                text-transform: uppercase;
+              }
+
+              .content > main > .wrap > .slider > .nav > .item > .decoration {
+                width: 0;
+                height: 0;
+                border-top: solid 10px #777777;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                margin: auto;
+              }
+
+          .content > main > .wrap > .slider > .image {
+            
           }
 
-          .content > main > .wrap > .subnav > a > .maps > .logo {
-            background-image: url(../image/subnav/maps-grey.jpg);
-          }
 
-          .content > main > .wrap > .subnav > a > .maps > .logo-white {
-            background-image: url(../image/subnav/maps-white.png);
-          }
 
-          .content > main > .wrap > .subnav > a > .science > .logo {
-            background-image: url(../image/subnav/science-grey.jpg);
-          }
 
-          .content > main > .wrap > .subnav > a > .science > .logo-white {
-            background-image: url(../image/subnav/science-white.png);
-          }
 
-          .content > main > .wrap > .subnav > a > .education > .logo {
-            background-image: url(../image/subnav/education-grey.jpg);
-          }
 
-          .content > main > .wrap > .subnav > a > .education > .logo-white {
-            background-image: url(../image/subnav/education-white.png);
-          }
 
-          .content > main > .wrap > .subnav > a > .games > .logo {
-            background-image: url(../image/subnav/games-grey.jpg);
-          }
 
-          .content > main > .wrap > .subnav > a > .games > .logo-white {
-            background-image: url(../image/subnav/games-white.png);
-          }
 
-          .content > main > .wrap > .subnav > a > .events > .logo {
-            background-image: url(../image/subnav/events-grey.jpg);
-          }
 
-          .content > main > .wrap > .subnav > a > .events > .logo-white {
-            background-image: url(../image/subnav/events-white.png);
-          }
-
-          .content > main > .wrap > .subnav > a > .blogs > .logo {
-            background-image: url(../image/subnav/blogs-grey.jpg);
-          }
-
-          .content > main > .wrap > .subnav > a > .blogs > .logo-white {
-            background-image: url(../image/subnav/blogs-white.png);
-          }
-
-          .content > main > .wrap > .subnav > a > .explorers > .logo {
-            background-image: url(../image/subnav/explorers-grey.jpg);
-          }
-
-          .content > main > .wrap > .subnav > a > .explorers > .logo-white {
-            background-image: url(../image/subnav/explorers-white.png);
-          }
-
-          .content > main > .wrap > .subnav > a > .trips > .logo {
-            background-image: url(../image/subnav/trips-grey.jpg);
-          }
-
-          .content > main > .wrap > .subnav > a > .trips > .logo-white {
-            background-image: url(../image/subnav/trips-white.png);
-          }
-
-          .content > main > .wrap > .subnav a > .item > .name {
-            font-family: "Myriad Pro Regular", "Arial", sans-serif;
-            font-size: 12px;
-            color: #777777;
-          }
-
-          .content > main > .wrap > .subnav a > .item > .name-white {
-            color: #ffffff;
-          }
 
 
 
