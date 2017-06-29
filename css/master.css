@@ -2,7 +2,7 @@
 body {
   max-width: 1050px;
   margin: auto;
-  padding: 40px 40px 10px 40px;
+  /*padding: 40px;*/
 }
 
 a {
@@ -13,6 +13,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 40px 40px  40px;
 }
 
 header .logo {
@@ -232,12 +233,13 @@ nav .nav-item-name:hover {
 .content {
   display: flex;
   justify-content: center;
+  margin: 10px 0;
 }
 
 main .wrap-subnav-and-slider{
   display: flex;
   width: 707px;
-  /*margin: auto;*/
+  margin: auto;
 }
 
 main .subnav {
@@ -245,7 +247,7 @@ main .subnav {
   flex-wrap: wrap;
   width: 170px;
   border-right: solid 1px #e8e8e8;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 main .subnav-item {
@@ -628,7 +630,7 @@ main .slider .slider-sort-news {
   display: flex;
   width: 504px;
   height: 34px;
-  margin-top: 12px;
+  margin-top: 15px;
   border: solid 1px #e8e8e8;
 }
 
@@ -717,6 +719,7 @@ main .articles {
   flex-wrap: wrap;
   width: 707px;
   margin: auto;
+  margin-top: 5px;
 }
 
 main .articles-article {
@@ -845,20 +848,549 @@ main .articles-article .article-description {
 }
 
 aside {
+  border-left: solid 1px #e8e8e8;
+  padding: 0 10px 0 17px;
+}
+
+aside .most-popular-videos {
+  margin: 12px 0;
+}
+
+aside .most-popular-news .header,
+aside .most-popular-videos .header,
+aside .upcoming-events .header {
+  display: flex;
+  width: 222px;
+  height: 28px;
+  border: solid 1px #e8e8e8;
+}
+
+aside .most-popular-news .header-logo {
+  width: 16px;
+  height: 16px;
+  background: url("../image/aside-sprite.png") 0px -62px no-repeat;
+  margin: 5px;
+}
+
+aside .most-popular-news .header-name,
+aside .most-popular-videos .header-name,
+aside .upcoming-events .header-name {
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #999999;
+  font-size: 12px;
+  margin: 8px;
+}
+
+aside .most-popular-news .news-item,
+aside .most-popular-videos .videos-item {
+  width: 214px;
+  border: solid 1px #e8e8e8;
+  padding: 4px;
+  margin: 7px 0;
+}
+
+aside .most-popular-news .news-item1 .img {
+  width: 214px;
+  height: 100px;
+  background-image: url("../image/aside/img1.png");
+}
+
+aside .most-popular-news .news-item .title-first-row {
+  display: flex;
+  padding: 5px 5px 0 5px;
+}
+
+aside .most-popular-news .news-item .title-second-row {
+  display: flex;
+  padding: 0px 5px;
+}
+
+aside .most-popular-news .news-item .title-name {
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #999999;
+  font-size: 13px;
+}
+
+aside .most-popular-news .news-item1 .title-stars {
+  width: 65px;
+  height: 12px;
+  background-image: url("../image/aside/star.png");
+  margin-left: 29px;
+}
+
+aside .most-popular-news .news-item .title-time {
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #999999;
+  font-size: 11px;
+}
+
+aside .most-popular-news .news-item .title-vote {
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #999999;
+  font-size: 11px;
+  margin-left: 85px;
+}
+
+aside .most-popular-news .news-item2 .img {
+  width: 214px;
+  height: 100px;
+  background-image: url("../image/aside/img2.png");
+}
+
+aside .most-popular-news .news-item2 .title-stars {
+  width: 65px;
+  height: 12px;
+  background-image: url("../image/aside/star.png");
+  margin-left: 16px;
+}
+
+aside .most-popular-videos .header-logo {
+  width: 16px;
+  height: 12px;
+  background: url("../image/aside-sprite.png") 0px -88px no-repeat;
+  margin: 8px 5px;
+}
+
+aside .most-popular-videos .videos-item1 .img {
+  width: 214px;
+  height: 100px;
+  background-image: url("../image/aside/img3.png");
+}
+
+aside .most-popular-videos .videos-item2 .img {
+  width: 214px;
+  height: 100px;
+  background-image: url("../image/aside/img4.png");
+}
+
+aside .most-popular-videos .videos-item .img {
+  position: relative;
+}
+
+aside .most-popular-videos .videos-item .img-title {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+aside .most-popular-videos .videos-item .img-views {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+aside .most-popular-videos .videos-item .img-play {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: url("../image/aside-sprite.png") 0px -192px no-repeat;
+}
+
+aside .upcoming-events .header-logo {
+  width: 16px;
+  height: 16px;
+  background: url("../image/aside-sprite.png") 0px -110px no-repeat;
+  margin: 5px 5px;
+}
+
+aside .upcoming-events .header-arrow-left {
+  width: 21px;
+  height: 21px;
+  margin: 3px 7px 3px 20px;
+  background: url("../image/aside-sprite.png") 0px 0px no-repeat;
+}
+
+aside .upcoming-events .header-border {
+  border-right: solid 1px #e8e8e8;
+  margin: 5px 0;
+}
+
+aside .upcoming-events .header-arrow-right {
+  width: 21px;
+  height: 21px;
+  margin: 3px 7px;
+  background: url("../image/aside-sprite.png") 0px -31px no-repeat;
+}
+
+aside .upcoming-events .content {
+  display: flex;
+  flex-direction: column;
+  width: 214px;
+  border: solid 1px #e8e8e8;
+  padding: 4px;
+  margin: 5px 0 10px 0;
+}
+
+aside .upcoming-events .content-title {
+  margin: 5px 0;
+  font-family: "Myriad Pro Semi Bold", "Arial", sans-serif;
+  color: #999999;
+  font-size: 12px;
+}
+
+aside .upcoming-events .content-border {
+  border-bottom: solid 1px #e8e8e8;
+}
+
+aside .upcoming-events .content-image {
+  position: relative;
+  width: 213px;
+  height: 58px;
+  background-image: url("../image/aside/img6.png");
+  margin: 5px 0;
+}
+
+aside .upcoming-events .content-image-time {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  bottom: 7px;
+  left: 7px;
+  background: url("../image/aside-sprite.png") 0px -238px no-repeat;
+}
+
+aside .upcoming-events .content-image-date {
+  display: inline-block;
+  width: 100px;
+  height: 13px;
+  position: absolute;
+  bottom: 5px;
+  left: 27px;
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+aside .upcoming-events .content-description {
+  margin: 5px 0;
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #999999;
+  font-size: 12px;
+}
+
+aside .upcoming-events .shoping-and-subscriptions {
+  display: flex;
+  justify-content: space-between;
+  width: 224px;
+}
+
+aside .upcoming-events .shoping,
+aside .upcoming-events .subscriptions {
+  display: flex;
+  border: solid 1px #e8e8e8;
+  padding: 5px;
+}
+
+aside .upcoming-events .shoping-logo {
+  width: 18px;
+  height: 18px;
+  background: url("../image/aside-sprite.png") 0px -136px no-repeat;
+}
+
+aside .upcoming-events .shoping-border,
+aside .upcoming-events .subscriptions-border {
+  margin: 0 7px;
+  border: solid 1px #e8e8e8;
+}
+
+aside .upcoming-events .shoping-name,
+aside .upcoming-events .subscriptions-name {
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #999999;
+  font-size: 11px;
+}
+
+aside .upcoming-events .subscriptions-logo {
+  width: 18px;
+  height: 18px;
+  background: url("../image/aside-sprite.png") 0px -164px no-repeat;
+}
+
+.ng-magazines {
+  max-width: 970px;
+  margin: 15px auto;
+}
+
+.ng-magazines-border {
+  margin: 0 15px;
+  border-top: solid 1px #e8e8e8;
+}
+
+.ng-magazines .header {
+  display: flex;
+  margin: 15px 15px 0 15px;
+  padding: 5px;
+  border: solid 1px #e8e8e8;
+}
+
+.ng-magazines .header-logo {
+  width: 23px;
+  height: 15px;
+  margin: 2px 5px;
+  background: url("../image/ng-magazines-sprite.png") 0 -89px no-repeat;
+}
+
+.ng-magazines .header-title {
+  width: 300px;
+  margin: 5px 5px 0 5px;
+  font-family: "Myriad Pro Semi Bold", "Arial", sans-serif;
+  color: #999999;
+  font-size: 12px;
+}
+
+.ng-magazines .header-strut {
+  width: 100%;
+}
+
+.ng-magazines .header-arrow-left {
+  width: 33px;
+  height: 21px;
+  margin: 0 5px;
+  background: url("../image/ng-magazines-sprite.png") 0px -31px no-repeat;
+}
+
+.ng-magazines .header-border {
+  border-right: solid 1px #e8e8e8;
+}
+
+.ng-magazines .header-arrow-right {
+  width: 35px;
+  height: 21px;
+  margin: 0 5px;
+  background: url("../image/ng-magazines-sprite.png") 0px 0px no-repeat;
+}
+
+.ng-magazines .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ng-magazines .content-item {
+  width: 226px;
+  border: solid 1px #e8e8e8;
+  margin: 5px 5px;
+}
+
+.ng-magazines .content-item .magazine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px;
+  border: solid 1px #e8e8e8;
+}
+
+.ng-magazines .content-item .magazine-img {
+  width: 69px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+.ng-magazines .content-item1 .magazine-img {
+  background-image: url("../image/ng-magazines/img1.png");
+}
+
+.ng-magazines .content-item2 .magazine-img {
+  background-image: url("../image/ng-magazines/img2.png");
+}
+
+.ng-magazines .content-item3 .magazine-img {
+  background-image: url("../image/ng-magazines/img3.png");
+}
+
+.ng-magazines .content-item4 .magazine-img {
+  background-image: url("../image/ng-magazines/img4.png");
+}
+
+.ng-magazines .content-item .magazine-title {
+  margin-bottom: 5px;
+  font-family: "Myriad Pro Semi Bold", "Arial", sans-serif;
+  color: #999999;
+  font-size: 13px;
+}
+
+.ng-magazines .content-item .description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ng-magazines .content-item1 .stars,
+.ng-magazines .content-item3 .stars,
+.ng-magazines .content-item4 .stars {
+  width: 65px;
+  height: 12px;
+  margin: 0 0 7px 7px;
+  background: url("../image/ng-magazines/star.png");
+}
+
+.ng-magazines .content-item2 .stars {
   display: flex;
 }
 
+.ng-magazines .content-item2 .stars-star {
+  width: 53px;
+  height: 12px;
+  margin: 0 0 7px 7px;
+  background: url("../image/ng-magazines/star.png");
+}
 
+.ng-magazines .content-item2 .stars-star-empty {
+  width: 12px;
+  height: 12px;
+  background: url("../image/ng-magazines/star-empty.png");
+}
 
+.ng-magazines .content-item .votes {
+  margin: 0 0 5px 7px;
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #999999;
+  font-size: 11px;
+}
 
+.ng-magazines .content-item .description-right-box {
+  display: flex;
+  height: 35px;
+  border-top: solid 1px #e8e8e8;
+  border-left: solid 1px #e8e8e8;
+}
 
+.ng-magazines .content-item .description-right-box .plus {
+  width: 20px;
+  height: 17px;
+  margin: 7px 0px 7px 5px;
+  background: url("../image/ng-magazines-sprite.png") 0px -62px no-repeat;
+}
 
+.ng-magazines .content-item .description-right-box .border {
+  margin: 5px;
+  border-right: solid 1px #e8e8e8;
+}
 
+.ng-magazines .content-item .description-right-box .subscribe {
+  margin: 12px 10px 12px 5px;
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+  color: #999999;
+  font-size: 11px;
+  text-transform: uppercase;
+}
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #242424;
+  border-left: solid 40px #323232;
+  border-right: solid 40px #323232;
+  font-family: "Myriad Pro Regular", "Arial", sans-serif;
+}
 
+footer .subscribe {
+  display: flex;
+  align-items: center;
+}
 
+footer input[type="email"] {
+  width: 200px;
+  height: 38px;
+  padding-left: 15px;
+  border: 0;
+  background-color: #323232;
+  font-size: 12px;
+  color: #999999;
+}
 
+footer input[type="submit"] {
+  width: 100px;
+  height: 40px;
+  margin: 5px 0 0 -6px;
+  background-color: #242424;
+  border: solid 5px #323232;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #999999;
+}
 
+footer .facebook {
+  width: 13px;
+  height: 25px;
+  margin: 0 10px;
+  background: url("../image/footer-sprite.png") 0px 0px;
+}
+
+footer .twitter {
+  width: 30px;
+  height: 25px;
+  background: url("../image/footer-sprite.png") 0px -35px;
+}
+
+footer .youtube {
+  width: 19px;
+  height: 19px;
+  margin: 0 10px;
+  background: url("../image/footer-sprite.png") 0px -70px;
+}
+
+footer .information-row1 {
+  display: flex;
+  font-size: 13px;
+  color: #acacac;
+}
+
+footer .information-row2 {
+  font-size: 12px;
+  color: #4a4a4a;
+}
+
+footer .information-row2 {
+  margin: 10px 0 0 30px;
+}
+
+footer .customer-service,
+footer .advertise,
+footer .terms-service,
+footer .privacy {
+  margin-top: 15px;
+  padding: 0 10px;
+}
+
+footer .customer-service,
+footer .advertise,
+footer .terms-service {
+  border-right: solid 1px #acacac;
+}
+
+@media (max-width: 980px) {
+  .content {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 0;
+    padding: 0;
+    margin-left: -15px;
+  }
+
+  aside .most-popular-news,
+  aside .most-popular-videos,
+  aside .upcoming-events {
+    margin: 8px 5px 0 5px;
+  }
+}
 
 
 
