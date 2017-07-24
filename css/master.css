@@ -233,7 +233,7 @@ nav .nav-item-name:hover {
 .content {
   display: flex;
   justify-content: center;
-  margin: 10px 0;
+  margin: 10px 0 10px 5px;
 }
 
 main .wrap-subnav-and-slider{
@@ -1388,7 +1388,7 @@ footer .terms-service {
   aside .most-popular-news,
   aside .most-popular-videos,
   aside .upcoming-events {
-    margin: 8px 5px 0 5px;
+    margin: 13px 5px 0 5px;
   }
 }
 
